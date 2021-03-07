@@ -736,6 +736,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cross-env@npm:^7.0.3":
+  version: 7.0.3
+  resolution: "cross-env@npm:7.0.3"
+  dependencies:
+    cross-spawn: ^7.0.1
+  bin:
+    cross-env: src/bin/cross-env.js
+    cross-env-shell: src/bin/cross-env-shell.js
+  checksum: af4fa4dab3ddf6c25ed5e0c95ef53ea363aceb41741e22b7eae83a12cc10cb2416e3aba29c95f2f2c3a1aa918d3444fe92fab318a8ba761e8d52ae88388496cc
+  languageName: node
+  linkType: hard
+
+"cross-spawn@npm:^7.0.1":
+  version: 7.0.3
+  resolution: "cross-spawn@npm:7.0.3"
+  dependencies:
+    path-key: ^3.1.0
+    shebang-command: ^2.0.0
+    which: ^2.0.1
+  checksum: 51f10036f5f1de781be98f4738d58b50c6d44f4f471069b8ab075b21605893ba1548654880f7310a29a732d6fc7cd481da6026169b9f0831cab0148a62fb397a
+  languageName: node
+  linkType: hard
+
 "crypto-browserify@npm:3.12.0, crypto-browserify@npm:^3.11.0":
   version: 3.12.0
   resolution: "crypto-browserify@npm:3.12.0"
@@ -1297,6 +1320,7 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "inspect-nextjs@workspace:."
   dependencies:
+    cross-env: ^7.0.3
     next: 10.0.8
     react: 17.0.1
     react-dom: 17.0.1
@@ -1941,6 +1965,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"path-key@npm:^3.1.0":
+  version: 3.1.1
+  resolution: "path-key@npm:3.1.1"
+  checksum: e44aa3ca9faed0440994883050143b1214fffb907bf3a7bbdba15dc84f60821617c0d84e4cc74e1d84e9274003da50427f54d739b0b47636bcbaff4ec71b9b86
+  languageName: node
+  linkType: hard
+
 "pbkdf2@npm:^3.0.3":
   version: 3.1.1
   resolution: "pbkdf2@npm:3.1.1"
@@ -2351,6 +2382,22 @@ fsevents@~2.3.1:
   bin:
     sha.js: ./bin.js
   checksum: 7554240ab76e683f7115123eb4815aae16b5fc6f2cdff97009831ad5b17b107ffcef022526211f7306957bce7a67fa4d0ccad79a3040c5073414365595e90516
+  languageName: node
+  linkType: hard
+
+"shebang-command@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "shebang-command@npm:2.0.0"
+  dependencies:
+    shebang-regex: ^3.0.0
+  checksum: 85aa394d8cedeedf2e03524d6defef67a2b07d3a17d7ee50d4281d62d3fca898f26ebe7aa7bf674d51b80f197aa1d346bc1a10e8efb04377b534f4322c621012
+  languageName: node
+  linkType: hard
+
+"shebang-regex@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "shebang-regex@npm:3.0.0"
+  checksum: ea18044ffaf18129ced5a246660a9171a7dff98999aaa9de8abb237d8a7711d8a1f76e16881399994ee429156717ce1c6a50c665bb18a4d55a7f80b9125b1f7d
   languageName: node
   linkType: hard
 
@@ -2833,7 +2880,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"which@npm:^2.0.2":
+"which@npm:^2.0.1, which@npm:^2.0.2":
   version: 2.0.2
   resolution: "which@npm:2.0.2"
   dependencies:
